@@ -1,0 +1,12 @@
+create database if not exists reservas;
+use reservas;
+
+create table if not exists Reservas (
+    idReserva int primary key auto_increment not null,
+    NombreCompletoCliente varchar(255) not null,
+    FechaEntrada date not null,
+    FechaSalida date not null
+);
+
+
+
