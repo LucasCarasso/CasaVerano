@@ -196,6 +196,11 @@ class CabanasUI:
                     tk.messagebox.showwarning("Error", "Las fechas seleccionadas ya están ocupadas.")
                     return
             
+            # Validar que la fecha de entrada no sea anterior a hoy
+            if fecha_entrada < datetime.now().date():
+                tk.messagebox.showwarning("Error", "La fecha de entrada no puede ser anterior a hoy.")
+                return
+            
             from conectarDB import agregarReserva
             exito = agregarReserva(self.conexion, cliente, fecha_entrada, fecha_salida)
             

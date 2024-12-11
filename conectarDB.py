@@ -31,7 +31,7 @@ def agregarReserva(conexion, cliente, fecha_entrada, fecha_salida):
 def obtenerReservas(conexion):
     try:
         with conexion.cursor() as cursor:
-            cursor.execute("SELECT idReserva,NombreCompletoCliente,FechaEntrada,FechaSalida FROM reservas")
+            cursor.execute("SELECT idReserva,NombreCompletoCliente,FechaEntrada,FechaSalida FROM reservas ORDER BY FechaEntrada")
             return cursor.fetchall() 
     except Exception as e:
         print(f"Error al obtener las reservas: {e}")

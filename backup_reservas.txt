@@ -1,12 +1,40 @@
-Cliente: Juan Perez
-Fecha de entrada: 2024-11-25
-Fecha de salida: 2024-11-26
+Cliente: RAMON SANTOS
+Fecha de entrada: 2024-12-11
+Fecha de salida: 2024-12-13
 ----------------------------------------
-Cliente: Roberto Pereira
-Fecha de entrada: 2025-01-20
-Fecha de salida: 2025-01-22
+Cliente: JUAN GONZALES
+Fecha de entrada: 2024-12-23
+Fecha de salida: 2025-01-02
 ----------------------------------------
-Cliente:        Matías Pereyra     
-Fecha de entrada: 2024-11-04
-Fecha de salida: 2024-11-07
+Cliente: MATEO CASTRO
+Fecha de entrada: 2024-12-13
+Fecha de salida: 2024-12-15
+----------------------------------------
+Cliente: ANTONIO PEREZ
+Fecha de entrada: 2025-01-02
+Fecha de salida: 2025-01-08
+----------------------------------------
+Cliente: VICTOR PEREYRA
+Fecha de entrada: 2024-12-13
+Fecha de salida: 2024-12-16
+----------------------------------------
+Cliente: JORGE DOS SANTOS
+Fecha de entrada: 2025-01-01
+Fecha de salida: 2025-01-31
+----------------------------------------
+Cliente: JUAN PEREZ
+Fecha de entrada: 2024-12-16
+Fecha de salida: 2024-12-22
+----------------------------------------
+Cliente: MATIAS SOSA
+Fecha de entrada: 2024-12-23
+Fecha de salida: 2024-12-29
+----------------------------------------
+Cliente: VICTOR CASTRO
+Fecha de entrada: 2024-12-11
+Fecha de salida: 2024-12-15
+----------------------------------------
+Cliente: ARTURO PEREYRA
+Fecha de entrada: 2025-01-01
+Fecha de salida: 2025-01-05
 ----------------------------------------
