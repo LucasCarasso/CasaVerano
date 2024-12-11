@@ -5,6 +5,8 @@ from tkcalendar import Calendar, DateEntry
 from datetime import datetime, timedelta
 from tkinter import messagebox
 import conectarDB
+from backup import guardar_backup_txt 
+
 
 # Paleta de colores y fuentes
 COLOR_PRINCIPAL = "#5C6BC0"  # Azul claro brillante para botones y fondos (más suave y estético)
@@ -196,13 +198,14 @@ class CabanasUI:
             
             from conectarDB import agregarReserva
             exito = agregarReserva(self.conexion, cliente, fecha_entrada, fecha_salida)
-
+            
             if exito:
                 tk.messagebox.showinfo("Éxito", "Reserva creada con éxito.")
+                guardar_backup_txt(cliente, fecha_entrada, fecha_salida)  # Llamar la función importada
                 self.cerrarVentana(self.ventanaReservar)
             else:
                 tk.messagebox.showerror("Error", "No se pudo guardar la reserva. Inténtelo de nuevo.")
-
+        
         btnConfirmar = tk.Button(
             self.ventanaReservar, text="Confirmar", font=FUENTE_BOTON, command=guardarReserva, bg=COLOR_PRINCIPAL, fg=COLOR_TEXTO
         )
@@ -256,7 +259,7 @@ class CabanasUI:
             reserva_seleccionada = self.lista_reservas.get(selected_index)
             idReserva = reserva_seleccionada.split(" - ")[0]
 
-            confirmacion = messagebox.askyesno("Confirmación", f"¿Está seguro de que desea cancelar la reserva {idReserva}?")
+            confirmacion = messagebox.askyesno("Confirmación", f"¿Está seguro de que desea cancelar la reserva N°:{idReserva}?")
             if confirmacion:
                 exito = conectarDB.eliminarReserva(self.conexion, idReserva)
                 if exito:

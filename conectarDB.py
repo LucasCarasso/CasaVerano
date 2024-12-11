@@ -13,6 +13,8 @@ def conectar(host, user, password, port):
 
 def agregarReserva(conexion, cliente, fecha_entrada, fecha_salida):
     try:
+        # Normalizar el nombre del cliente: pasar a mayúsculas y quitar espacios al principio y final.
+        cliente = cliente.strip().upper()
         with conexion.cursor() as cursor:
             cursor.execute("USE reservas;")
             consulta = """
