@@ -18,6 +18,7 @@ cnx = conectarDB.conectar(host, user, password, port)
 
 def leerBDD():
     reservas = conectarDB.obtenerReservas(cnx)
+    print(reservas)
     arrayReservas = []
 
     for reserva in reservas:

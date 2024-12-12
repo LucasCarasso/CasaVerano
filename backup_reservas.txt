@@ -38,3 +38,23 @@ Cliente: ARTURO PEREYRA
 Fecha de entrada: 2025-01-01
 Fecha de salida: 2025-01-05
 ----------------------------------------
+Cliente: JUAN JOSE GOMEZ
+Fecha de entrada: 2024-12-12
+Fecha de salida: 2024-12-13
+----------------------------------------
+Cliente: JUAN JOSE LOPEZ
+Fecha de entrada: 2024-12-13
+Fecha de salida: 2024-12-17
+----------------------------------------
+Cliente: ELIAS LOPEZ
+Fecha de entrada: 2024-12-11
+Fecha de salida: 2024-12-13
+----------------------------------------
+Cliente: FEDERICO BERTAZZO
+Fecha de entrada: 2024-12-23
+Fecha de salida: 2024-12-29
+----------------------------------------
+Cliente: JUAN PEREZ
+Fecha de entrada: 2025-01-22
+Fecha de salida: 2025-01-31
+----------------------------------------
